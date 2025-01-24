@@ -29,7 +29,7 @@ This Python script generates and transmits LLDP (Link Layer Discovery Protocol) 
 
 1. Install Scapy: `pip install scapy`
 2. Modify the configuration variables in the script (`src_mac`, etc.) to suit your needs.
-3. Run the script: `python lldp_generator.py <number_of_LLDP_PDUs>` (replace `<number_of_LLDP_PDUs>` with the desired number of packets to send).
+3. Run the script: `python lldp.py <number_of_LLDP_PDUs>` (replace `<number_of_LLDP_PDUs>` with the desired number of packets to send).
 
 **Example:**
 
