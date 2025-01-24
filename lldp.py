@@ -131,11 +131,11 @@ def craftLLDPDU():
 
 def main(numPDUs):
     ether_layer = Ether(src=src_mac, dst=dst_mac)
-    vlan_layer = Dot1Q(vlan=666, type=0x88cc)
+    vlan_layer = Dot1Q(vlan=777, type=0x88cc)
     for pdu in range(numPDUs):
         lldp = craftLLDPDU()
         packet = ether_layer / lldp
-        # the kernel already encapsulates in dot1q because eno5.66 is a VLAN subinterface
+        # the kernel already encapsulates in dot1q because eno6.777 is a VLAN subinterface
         # as such no need to add vlan_layer to the packet but do experiment with your setup
         sendp(packet, iface="eno6.777") 
         packet.show()
