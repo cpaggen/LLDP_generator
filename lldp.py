@@ -15,7 +15,6 @@ import time
 # set your NIC's MAC here
 src_mac          = "8c:44:a5:38:e3:28"    
 # modify as you see fit
-chassis_id       = "00:00:be:ef:ca:fe"
 dst_mac          = "01:80:c2:00:00:0e"
 port_id          = "Ethernet1/2/3"
 pdu_ttl          = 120
